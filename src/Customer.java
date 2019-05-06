@@ -26,7 +26,8 @@ class Customer {
             // add frequent renter points
             frequentRenterPoints += each.getFrequentRenterPoints();
             //show figures for this rental
-            result += "\t" + each.getMovie().getTitle()+ "\t" + "\t" + each.getDaysRented() + "\t" + each.getCharge() + "\n";
+            result += "\t" + each.getMovie().getTitle()+ "\t" + "\t" + each.getDaysRented() + "\t" +
+                    each.getCharge() + "\n";
         }
         //add footer lines
         result += "Amount owed is " + this.getTotalCharge() + "\n";
