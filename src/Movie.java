@@ -41,10 +41,6 @@ public class Movie {
 
     public int getFrequentRenterPoints(int daysRented)
     {
-        if (this.getPriceCode() == Movie.NEW_RELEASE && daysRented > 1)
-        {
-            return 2;
-        }
-        return 1;
+      return this.price.getFrequentRenterPoints(daysRented);
     }
 }
